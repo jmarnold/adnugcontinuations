@@ -2,3 +2,28 @@ body
 {
     padding-top: 60px;
 }
+
+.validation-summary
+{
+    background-color: #FEF1EC;
+    border: 2px solid #E51937;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    clear: left;
+    border-image: initial;
+    list-style: disc;
+}
+
+.validation-summary li
+{
+    margin-left: 25px;
+}
+
+input.error
+{
+    background: none repeat scroll 0 0 #F1CECE;
+    border: 1px solid #F19696;
+    color: #B22;
+    border-image: initial;
+}
