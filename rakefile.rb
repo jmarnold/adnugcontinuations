@@ -24,10 +24,7 @@ BUILD_NUMBER = build_number
 props = { :stage => File.expand_path("build"), :artifacts => File.expand_path("artifacts") }
 
 desc "**Default**, compiles and runs tests"
-task :default => [:compile, :unit_test]
-
-desc "Target used for the CI server"
-task :ci => [:update_all_dependencies, :default, :history, :publish]
+task :default => [:compile]
 
 desc "Prepares the working directory for a new build"
 task :clean do
