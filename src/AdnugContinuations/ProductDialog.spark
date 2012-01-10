@@ -1,0 +1,20 @@
+<use master=""/>
+<viewdata model="AdnugContinuations.ProductDialog" />
+<div style="style:none" id="product-dialog" title="Create new product" class="dialog">
+  <Form model="Product">
+    <fieldset>
+      <div class="col">
+        <Label property="Title" />
+        <div class="input">
+          <Input property="Title" />
+        </div>
+      </div>
+      <div class="col">
+        <Label property="Description" />
+        <div class="input">
+          <Input property="Description" />
+        </div>
+      </div>
+    </fieldset>
+  </Form>
+</div>

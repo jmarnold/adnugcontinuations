@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><use content="title"/> | Adnug Continuations</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+      <Stylesheet href="default.css" />
+      <Script src="core" />
+      <use content="head"/>
+      <Styles />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">Adnug Continuations</a>
+          <ul class="nav">
+            <li class="active">
+              <a href="#">Products</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <use content="main" />
+      <footer>
+        <p>&copy; Josh Arnold</p>
+      </footer>
+      <Scripts />
+      <script>
+        $(function() {
+        "use strict";
+        });
+      </script>
+    </div>
+  </body>
+</html>

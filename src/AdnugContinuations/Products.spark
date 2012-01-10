@@ -1,0 +1,29 @@
+<viewdata model="AdnugContinuations.ProductListViewModel" />
+<content:title>Products</content:title>
+<content:head>
+  <Script src="products.js" />
+</content:head>
+<content:main>
+  <div class="row">
+    <div class="span4">
+      <h1>Products</h1>
+    </div>
+    <div class="span4">
+      <button id="new-product" class="btn primary">+ Add Product</button>
+    </div>
+  </div>
+  <if condition="Model.Products.Any()">
+	<ul>
+		<li each="var p in Model.Products">
+			<h3>${p.Title}</h3>
+			<p>${p.Description}</p>
+		</li>
+	</ul>
+  </if>
+  <else>
+	<div class="empty">
+		<p>There aren't any products yet. Maybe you should add some?</p>
+	</div>
+  </else>
+  <Partial model="ProductDialog"/>
+</content:main>
